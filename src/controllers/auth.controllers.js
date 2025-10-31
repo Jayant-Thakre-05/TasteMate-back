@@ -136,7 +136,7 @@ const forgotPasswordController = async (req, res) => {
       expiresIn: "10m",
     });
 
-    let resetLink = `http://localhost:3000/api/auth/reset-password/${resetToken}`;
+    let resetLink = `https://tastemate05.netlify.app/api/auth/reset-password/${resetToken}`;
 
     let resetTemp = resetPassTemplate(user.email, resetLink);
 
